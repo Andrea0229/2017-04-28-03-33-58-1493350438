@@ -7,13 +7,13 @@ public class BowlingGameTest {
     @Test
     public void test_all_strike() throws Exception {
         String bowlingCode = "X|X|X|X|X|X|X|X|X|X||XX";           //300
-        assertEquals(new BowlingGame().getBowlingScore(bowlingCode), 300);
+        Assert.assertEquals(new BowlingGame().getBowlingScore(bowlingCode), 300);
     }
 
     @Test
     public void test_second_spare() throws Exception {
         String bowlingCode = "5/|5/|5/|5/|5/|5/|5/|5/|5/|5/||5";  //150
-        assertEquals(new BowlingGame().getBowlingScore(bowlingCode), 150);
+        Assert.assertEquals(new BowlingGame().getBowlingScore(bowlingCode), 150);
     }
 
     @Test
