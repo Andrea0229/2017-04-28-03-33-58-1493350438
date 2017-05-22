@@ -1,0 +1,16 @@
+BowlingGameTemplate：创建一个BowlingGameTemplate模板
+	该模板有三个抽象方法，分别是保龄球成绩分析inputAnalyse、计算分数calculate和获取最终分数getResult。
+	公有方法getScore定义了inputAnalyse、calculate、getResult三个方法的执行顺序
+DefaultBowlingGame：默认计分方式，继承自BowlingGameTemplate,是本程序中实现的保龄球计分方法。复写了父类的inputAnalyse、calculate、getResult方法。
+
+FrameFactory：简单工厂模式
+
+Stragy：定义了一种计分策略
+DefaultRule：默认积分规则，即为本程序中要求的计分方式
+
+Frame：抽象类，对每格分数的记录
+StrikeFrame:继承自Frame，每个第一击全中
+NormalFrame:继承自Frame，每格需要击两次
+ErrorFrame:继承自Frame，一个中包含错误记录（长度错误，非法字符，空记录）
+
+BowlingGameTest：测试方法类
